@@ -5,8 +5,15 @@ local Window = Library.CreateLib("Project BlackG", "Ocean")
     local MainSection = Main:NewSection("Main")
 
 
-    MainSection:NewButton("Back/Front Flip", "Makes you do gymnastics", function()
-        loadstring(game:HttpGet('https://pastebin.com/raw/7wDcPtLk'))()
+    MainSection:NewButton("Silent Aim", "Make Your Aim Better LOL", function()
+        getgenv().setting = {
+    Fov = 50,
+    Color = Color3.fromRGB(191, 255, 209),
+    LockPlayers = true,
+    LockPlayersBind = Enum.KeyCode.L,
+    resetPlayersBind = Enum.KeyCode.P,
+}
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Besty191/MAZI-API/main/Blox_Fruit_Silent_Aim'))()
     end)
 
     MainSection:NewToggle("Super-Human", "go fast and jump high", function(state)
