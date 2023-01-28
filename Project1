@@ -5,8 +5,7 @@ local Window = Library.CreateLib("Project BlackG", "Ocean")
     local MainSection = Main:NewSection("Main")
     -- BloxFruit
 local Main = Window:NewTab("BloxFruit")
-local MainSection =
-Main:NewSection("BloxFruit")
+local MainSection = Main:NewSection("BloxFruit")
 
     MainSection:NewToggle("Get All Chest","Spam Reset To Avoid Kick"", function(state)
     if state then
