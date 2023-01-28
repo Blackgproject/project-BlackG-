@@ -4,11 +4,11 @@ local Window = Library.CreateLib("Project BlackG", "Ocean")
     local Main = Window:NewTab("Main")
     local MainSection = Main:NewSection("Main")
     -- BloxFruit
-local BloxFruit = Window:NewTab("BloxFruit")
-local BloxFruitSection =
-BloxFruit:NewSection("BloxFruit")
+local Main = Window:NewTab("BloxFruit")
+local MainSection =
+Main:NewSection("BloxFruit")
 
-    BloxFruitSection:NewToggle("Get All Chest","Spam Reset To Avoid Kick"", function(state)
+    MainSection:NewToggle("Get All Chest","Spam Reset To Avoid Kick"", function(state)
     if state then
     _G.Chest = true
 for i,v in pairs(workspace:GetChildren()) do
