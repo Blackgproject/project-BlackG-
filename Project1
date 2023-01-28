@@ -27,7 +27,7 @@ for i,v in pairs(workspace:GetChildren()) do
             game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = workspace[v.Name].CFrame
         end
     end
-end
+end)
 
    
 
